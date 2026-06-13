@@ -16,6 +16,16 @@ import sphinx.util
 import logging
 
 load_into_locals(locals())
+```
+# Configure "Edit on GitHub" links for ReadTheDocs
+html_context = {
+    "display_github": True,
+    "github_user": "ipython",
+    "github_repo": "ipython",
+    "github_version": "main",
+    "confpypath": "/docs/source/",
+}
+```
 # https://read-the-docs.readthedocs.io/en/latest/faq.html
 ON_RTD = os.environ.get("READTHEDOCS", None) == "True"
 
